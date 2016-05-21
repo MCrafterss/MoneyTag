@@ -1,0 +1,16 @@
+name: MoneyTag
+main: MoneyTag\Main
+author: Skullex
+description: This plugin supported EconomyAPI
+version: 1.0
+api:
+- 1.13.1
+- 2.0.0
+- 1.0.0
+- 1.14.0
+
+commands:
+    coins:
+        permission: moneytag.use
+        description : List your Sky coins
+        default: true
