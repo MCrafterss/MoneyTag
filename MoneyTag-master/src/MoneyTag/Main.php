@@ -40,7 +40,7 @@ class Main extends PluginBase Implements Listener {
                       $money = EconomyAPI::getInstance()->myMoney($sender);
                       $all = $this->getServer()->getOnlinePlayers();
                       $name = $sender->getName();
-                      $sender->sendMessage(TF::GOLD."[".TF::YELLOW." $ ".TF::GOLD."] ".TF::GREEN. $name.", you have ".TF::AQUA.$money. TF::GOLD." Sky".TF::GREEN." coins");
+                      $sender->sendMessage(TF::GOLD."[".TF::YELLOW." $ ".TF::GOLD."] ".TF::GREEN. $name.", you have ".TF::AQUA.$money. TF::GREEN." coins");
               }
     }
     
