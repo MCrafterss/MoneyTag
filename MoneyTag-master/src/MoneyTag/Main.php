@@ -68,14 +68,14 @@ class Main extends PluginBase Implements Listener {
         }
     }
     
-    public function onMove(PlayerMoveEvent $event){
+    /*public function onMove(PlayerMoveEvent $event){
         $player = $event->getPlayer();
         $money = EconomyAPI::getInstance()->myMoney($player);
         $name = $player->getName();
         $all = $this->getServer()->getOnlinePlayers();
         $player->setNameTag(TF::DARK_GRAY."[ ".TF::YELLOW.$money. TF::DARK_GRAY." ] ".TF::GOLD .$name."");
         //$player->setDisplayName(TF::DARK_GRAY."[ ".TF::YELLOW.$money. TF::DARK_GRAY." ] ".TF::GOLD .$name."");
-    }
+    }*/
     
     public function onDeath(PlayerDeathEvent $event){
         $player = $event->getPlayer();
