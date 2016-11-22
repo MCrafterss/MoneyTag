@@ -19,6 +19,7 @@ use pocketmine\entity\Entity;
 use pocketmine\Server;
 use onebone\economyapi\EconomyAPI;
 use onebone\economyapi\event\EconomyAPIEvent;
+use MoneyTag\MoneyChangedEvent;
 use pocketmine\IPlayer;
 use LogLevel;
 
