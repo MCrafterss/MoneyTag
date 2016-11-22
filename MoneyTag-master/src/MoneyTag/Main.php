@@ -33,6 +33,13 @@ class Main extends PluginBase Implements Listener {
     public function getMoneyPlugin() {
 		return $this->money;
 	}
+	
+	public function onMoneyChange(MoneyChangedEvent $event){
+		$player = $event->getUsername();
+		$name = $player->getName();
+		$money = EconomyAPI::getInstance()->myMoney($player);
+		$player->setNameTag(TF::DARK_GRAY."[ ".TF::YELLOW.$money. TF::DARK_GRAY." ] ".TF::GOLD .$name."");
+	}
     
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
 		      switch($command->getName()){
